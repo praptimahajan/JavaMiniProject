@@ -17,7 +17,7 @@ public class Main {
             Scanner scObj = new Scanner(System.in);
             int inputSelection = scObj.nextInt();
             //Print the User selection to show user that he has selected which operation
-            System.out.println("You selected: " + inputSelection);
+            System.out.println("Your input is: " + inputSelection);
             // Write a switch case and create an object of specific class there to perform operations as per the users choice
             switch (inputSelection) {
                 case 0:
