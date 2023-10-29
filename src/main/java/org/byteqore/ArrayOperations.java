@@ -77,13 +77,13 @@ public class ArrayOperations {
             arr[i] = scObj.nextInt();
         }
         displayInputArray(arr);
-        int maximumvalue = 0;
+        int maximumvalue =0;
         for (int i = 0; i < arraySize; i++) {
             if (arr[i] > maximumvalue) {
                 maximumvalue = arr[i];
             }
         }
-        System.out.println("Minimum element in the array: " + maximumvalue);
+        System.out.println("Maximum element in the array: " + maximumvalue);
     }
 
     //Que:4)  Write a Java program to calculate the sum of all elements in an array.
@@ -101,6 +101,7 @@ public class ArrayOperations {
         for (int i = 0; i < arrayFiles; i++) {
             sum = sum + arr[i];
         }
+        System.out.println("Sum of array: "+ sum);
     }
 
     public static void displayInputArray(int[] inputArray) {
@@ -110,4 +111,5 @@ public class ArrayOperations {
         }
         System.out.println("]");
     }
+
 }
