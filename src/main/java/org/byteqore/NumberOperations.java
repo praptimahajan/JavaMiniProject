@@ -9,6 +9,7 @@ public class NumberOperations {
     // and perform operations
 
     public NumberOperations() {
+        System.out.println("-------------------------------------------------------------------------");
         System.out.println("Kindly select the topic you need to perform NumberOperations:");
         System.out.println("1.check if number is even or odd" + "\n2.check if number is prime" + "\n3.check if number is pallindrome" + "\n4.check if number is negative or positive " + "\n5.Print all odd numbers between given range" + " \n6.Print all even numbers between given range" + "\n7.print table of number" + "\n8.print addition" + "\n9.print subtraction" + "\n10. print division " + "\n11. print factorial");
 
@@ -22,7 +23,7 @@ public class NumberOperations {
                 primeNumber();
                 break;
             case 3:
-                checkPallindrome();
+                checkPalindrome();
                 break;
             case 4:
                 positiveNegative();
@@ -77,16 +78,15 @@ public class NumberOperations {
         }
     }
 
-
     //3. check if number is pallindrome
-    public static void checkPallindrome() {
+    public static void checkPalindrome() {
         Scanner scObj = new Scanner(System.in);
-        System.out.println("Enter a number to check if it is pallindrome or not: ");
+        System.out.println("Enter a number to check if it is palindrome or not: ");
         int input = scObj.nextInt();
         System.out.println("Your input is: " + input);
 
-        //Ex: 121 ,12321,12344321 is pallindrome
-        //Ex: 123 ,1231, 123421 not pallindrome
+        //Ex: 121 ,12321,12344321 is palindrome
+        //Ex: 123 ,1231, 123421 not palindrome
         int tempNumber = input;
         int reverseNumber = 0;
 
@@ -211,17 +211,3 @@ public class NumberOperations {
         System.out.println("Your input is: " + number);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

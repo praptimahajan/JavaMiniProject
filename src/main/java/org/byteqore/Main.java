@@ -8,10 +8,10 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Welcome to mini project!");
         boolean exit = true;
+
     while (exit) {
             System.out.println("Kindly select the topic you need to perform operations on.");
             System.out.println(" 1. Operations on Strings " + "\n 2. Operations on Numbers " + "\n 3. Operations on Array " + "\n 4. Operations on List " + "\n 5. Operations on Polymorphism " + "\n 6. Operations on Inheritance " + "\n 7. Operations on Abstraction " + "\n 8. Operations on Maps " + "\n 9. Operations on Database " + "\n 10. Operations on Pattern " + "\n *** Press (0) to exit ***");
-
 
             //accept input selection from user to perform action/operation
             Scanner scObj = new Scanner(System.in);
