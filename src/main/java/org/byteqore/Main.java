@@ -11,7 +11,7 @@ public class Main {
 
     while (exit) {
             System.out.println("Kindly select the topic you need to perform operations on.");
-            System.out.println(" 1. Operations on Strings " + "\n 2. Operations on Numbers " + "\n 3. Operations on Array " + "\n 4. Operations on List " + "\n 5. Operations on Polymorphism " + "\n 6. Operations on Inheritance " + "\n 7. Operations on Abstraction " + "\n 8. Operations on Maps " + "\n 9. Operations on Database " + "\n 10. Operations on Pattern " + "\n *** Press (0) to exit ***");
+            System.out.println(" 1. Operations on Strings " + "\n 2. Operations on Numbers " + "\n 3. Operations on Array " + "\n 4. Operations on List " + "\n 5. Operations on Polymorphism " + "\n 6. Operations on Inheritance " + "\n 7. Operations on Abstraction " + "\n 8. Operations on Maps " + "\n 9. Operations on Database " + "\n 10. Operations on Pattern "+ "\n 11. WaterFall String Printing " +"\n *** Press (0) to exit ***");
 
             //accept input selection from user to perform action/operation
             Scanner scObj = new Scanner(System.in);
@@ -32,6 +32,12 @@ public class Main {
                     break;
                 case 3:
                     ArrayOperations arrObj = new ArrayOperations();
+                    break;
+                case 9:
+                    DatabaseOperations databaseOperations = new DatabaseOperations();
+                    break;
+                case 11:
+                    MagicCode obj=new MagicCode();
                     break;
             }
             // Then pass the user selection to the object to call the respective method and perform operation
